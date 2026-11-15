@@ -37,20 +37,6 @@ export default function Hero() {
               </p>
             </div>
             <div className="p-5 rounded-2xl bg-zinc-900/70 border border-zinc-800 space-y-2">
-              <Cpu className="w-6 h-6 text-fuchsia-400" />
-              <div className="text-2xl font-bold">DSP 204</div>
-              <p className="text-xs text-zinc-400">
-                Pentes Linkwitz-Riley 48 dB/oct et alignement de phase REW
-              </p>
-            </div>
-            <div className="p-5 rounded-2xl bg-zinc-900/70 border border-zinc-800 space-y-2">
-              <Zap className="w-6 h-6 text-amber-400" />
-              <div className="text-2xl font-bold">PowerCON</div>
-              <p className="text-xs text-zinc-400">
-                Chaînage électrique Neutrik sécurisé sur chaque caisson actif
-              </p>
-            </div>
-            <div className="p-5 rounded-2xl bg-zinc-900/70 border border-zinc-800 space-y-2">
               <Radio className="w-6 h-6 text-emerald-400" />
               <div className="text-2xl font-bold">RCF & B&C</div>
               <p className="text-xs text-zinc-400">
