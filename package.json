@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://kainovaiii.github.io/kicknode6tem",
+  "homepage": "https://kainovaii.github.io/kicknode6tem",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

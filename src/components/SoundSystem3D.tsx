@@ -7,8 +7,8 @@ interface SoundSystem3DProps {
 }
 
 export default function SoundSystem3D({ currentStep = 1 }: SoundSystem3DProps) {
-  // Adapte le nom du fichier ici si tes .glb s'appellent autrement (ex: `/step${currentStep}_2.glb`)
-  const glbPath = `/step${currentStep}.glb`;
+  // Utilisation correcte du BASE_URL pour le chargement dynamique
+  const glbPath = `${import.meta.env.BASE_URL}step${currentStep}.glb`;
 
   const { scene } = useGLTF(glbPath);
 
@@ -58,7 +58,7 @@ export default function SoundSystem3D({ currentStep = 1 }: SoundSystem3DProps) {
   );
 }
 
-// Précharge les 3 modèles pour que le changement d'étape soit instantané
-useGLTF.preload('/step1.glb');
-useGLTF.preload('/step2.glb');
-useGLTF.preload('/step3.glb');
+// Précharge les 3 modèles avec des backticks (``) pour que le BASE_URL soit bien interprété
+useGLTF.preload(`${import.meta.env.BASE_URL}step1.glb`);
+useGLTF.preload(`${import.meta.env.BASE_URL}step2.glb`);
+useGLTF.preload(`${import.meta.env.BASE_URL}step3.glb`);
