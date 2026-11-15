@@ -24,7 +24,7 @@ export default function Speakers() {
               <div className="text-xs font-mono text-zinc-500">KICK BIN 15 POUCES</div>
               <h3 className="text-lg font-bold">Achat 115 Sub A</h3>
               <p className="text-sm text-zinc-400 leading-relaxed">
-                Dédié à la restitution percutante du bas-médium / kick entre 90 Hz et 200 Hz.
+                Dédié à la restitution percutante du bas-médium / kick entre 85 Hz et 140 Hz.
                 Avec le haut-parleur B&C 15NDL88 (8 Ohms) pour une dynamique accrue.
               </p>
             </div>
@@ -33,7 +33,7 @@ export default function Speakers() {
               <div className="text-xs font-mono text-zinc-500">ENCEINTE TOP 12" + 1"</div>
               <h3 className="text-lg font-bold">Achat 112 MA MKII</h3>
               <p className="text-sm text-zinc-400 leading-relaxed">
-                Diffusion médium-aigu au-dessus de 200 Hz. Avec un woofer B&C 12NDL76
+                Diffusion médium-aigu au-dessus de 140 Hz. Avec un woofer B&C 12NDL76
                 couplé à une compression B&C DE 250 pour une clarté chirurgicale.
               </p>
             </div>
