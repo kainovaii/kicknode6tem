@@ -12,7 +12,7 @@ export default function App() {
       <DSP />
       <Speakers />
       <footer className="mt-auto border-t border-zinc-900 py-8 px-6 text-center text-xs text-zinc-500">
-        <p>© {new Date().getFullYear()} Kicknode Sound System — Tous droits réservés.</p>
+        <p>© {new Date().getFullYear()} Kicknode Sound System — All rights reserved.</p>
       </footer>
     </div>
   );

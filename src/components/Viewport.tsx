@@ -7,20 +7,20 @@ import { Layers } from 'lucide-react';
 const STEPS = [
   {
     id: 1,
-    badge: 'Étape 1',
-    title: 'Configuration Actuelle',
-    subtitle: 'Stack Mono 3 Voies Actif',
+    badge: 'Step 1',
+    title: 'Current Setup',
+    subtitle: 'Active 3-Way Mono Stack',
     specs: [
-      '1x Achat 118 A (Subwoofer Folded Horn)',
+      '1x Achat 118 A (Folded Horn Subwoofer)',
       '1x Achat 115 Sub A (Kick Bin)',
       '1x Achat 112 MA MKII (Top)',
     ],
   },
   {
     id: 2,
-    badge: 'Étape 2',
-    title: 'Extension Intermédiaire',
-    subtitle: 'Doublement de l’infra-grave',
+    badge: 'Step 2',
+    title: 'Intermediate Expansion',
+    subtitle: 'Doubling the Infra-Low End',
     specs: [
       '2x Achat 118 A (Subwoofers)',
       '1x Achat 115 Sub A (Kick Bin)',
@@ -29,13 +29,13 @@ const STEPS = [
   },
   {
     id: 3,
-    badge: 'Étape 3',
-    title: 'Façade Complète',
-    subtitle: 'Full Stack Custom RCF & B&C',
+    badge: 'Step 3',
+    title: 'Full Front-of-House',
+    subtitle: 'Full Custom RCF & B&C Stack',
     specs: [
-      '4x Achat 118 A (chargés RCF LF18X401)',
-      '2x Achat 115 Sub A (chargés B&C 15NDL88)',
-      '2x Achat 112 MA MKII (chargés B&C 12NDL76 + DE 250)',
+      '4x Achat 118 A (loaded with RCF LF18X401)',
+      '2x Achat 115 Sub A (loaded with B&C 15NDL88)',
+      '2x Achat 112 MA MKII (loaded with B&C 12NDL76 + DE 250)',
     ],
   },
 ];
@@ -50,12 +50,12 @@ export default function Viewport() {
         <div className="max-w-7xl mx-auto space-y-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
             <div>
-              <h2 className="text-3xl font-bold mt-1">Les différentes configurations du système</h2>
+              <h2 className="text-3xl font-bold mt-1">The Different System Configurations</h2>
             </div>
           </div>
 
           <div className="grid lg:grid-cols-12 gap-6 items-stretch">
-            {/* Viewport 3D */}
+            {/* 3D Viewport */}
             <div className="lg:col-span-8 relative h-[520px] rounded-2xl overflow-hidden border border-zinc-800 bg-zinc-900/50 shadow-2xl">
               <Canvas shadows camera={{ position: [2.5, 1.4, 4.5], fov: 30 }}>
                 <color attach="background" args={['#1B112D']} />
@@ -85,7 +85,7 @@ export default function Viewport() {
               </div>
             </div>
 
-            {/* Panneau de contrôle des étapes */}
+            {/* Step control panel */}
             <div className="lg:col-span-4 flex flex-col justify-between gap-4">
               <div className="space-y-3">
                 {STEPS.map((step) => {

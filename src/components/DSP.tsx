@@ -3,27 +3,27 @@ import { Sliders } from 'lucide-react';
 
 const CROSSOVER_BANDS = [
   {
-    way: 'Voie 1 — Sub (Infra)',
+    way: 'Way 1 — Sub (Infra)',
     range: '35 Hz – 86 Hz',
     slope: 'Linkwitz-Riley 24 dB/oct',
     cabinet: 'Achat 118 A',
-    driver: 'Transducteurs: RCF LF18X401',
+    driver: 'Drivers: RCF LF18X401',
     color: 'border-violet-500/40 bg-violet-500/10 text-violet-300',
   },
   {
-    way: 'Voie 2 — Kick (Bass)',
+    way: 'Way 2 — Kick (Bass)',
     range: '86 Hz – 140 Hz',
     slope: 'Linkwitz-Riley 24 dB/oct',
     cabinet: 'Achat 115 Sub A',
-    driver: 'Transducteurs: B&C 15NDL88 (8 Ω)',
+    driver: 'Drivers: B&C 15NDL88 (8 Ω)',
     color: 'border-fuchsia-500/40 bg-fuchsia-500/10 text-fuchsia-300',
   },
   {
-    way: 'Voie 3 — Top (Mid / High)',
+    way: 'Way 3 — Top (Mid / High)',
     range: '140 Hz – 20 kHz',
     slope: 'Linkwitz-Riley 24 dB/oct',
     cabinet: 'Achat 112 MA MKII',
-    driver: 'Transducteurs: B&C 12NDL76 + DE 250',
+    driver: 'Drivers: B&C 12NDL76 + DE 250',
     color: 'border-indigo-500/40 bg-indigo-500/10 text-indigo-300',
   },
 ];
@@ -34,12 +34,12 @@ export default function DSP() {
         <div className="max-w-7xl mx-auto space-y-10">
           <div className="max-w-2xl">
             <span className="text-xs font-semibold uppercase tracking-widest text-violet-400">
-              Traitement du Signal & Acoustique
+              Signal Processing & Acoustics
             </span>
-            <h2 className="text-3xl font-bold mt-1">Filtrage Actif DSP 204 & Calibrage</h2>
+            <h2 className="text-3xl font-bold mt-1">DSP 204 Active Filtering & Calibration</h2>
             <p className="text-sm text-zinc-400 mt-2">
-              Chaque bande de fréquence est découpée numériquement avec des pentes raides
-              Linkwitz-Riley 48 dB/octave et alignée en phase au micro de mesure Superlux ECM999.
+              Each frequency band is digitally split with steep Linkwitz-Riley
+              48 dB/octave slopes and phase-aligned using the Superlux ECM999 measurement mic.
             </p>
           </div>
 
@@ -58,7 +58,7 @@ export default function DSP() {
                   <h3 className="text-xl font-bold">{band.way}</h3>
                   <p className="text-xs text-zinc-400 flex items-center gap-1.5">
                     <Sliders className="w-3.5 h-3.5 text-violet-400" />
-                    <span>Filtre : {band.slope}</span>
+                    <span>Filter: {band.slope}</span>
                   </p>
                 </div>
 
